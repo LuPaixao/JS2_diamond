@@ -14,37 +14,30 @@
         </header>
 
         <main>
-            <section>
-                <h1>Tela de login</h1>
-                <p>Preencha os campos para conseguir realizar login</p>
-                <form class="form__login" action="https://dummyjson.com/auth/login" method="POST">
-                    <div class="input__container">
-                      <label for="username">Username:</label>
-                      <input
-                        type="text"
-                        name="username"
-                        placeholder="Digite o seu usuário"
-                        id="username"
-                        class="input"
-                        required
-                      >
-                    </div>
-                    <div class="input__container">
-                      <label for="password">Senha:</label>
-                      <input
-                        type="password"
-                        name="password"
-                        placeholder="Digite a sua senha"
-                        id="password"
-                        class="input"
-                        required
-                      >
-                    </div>
-                    <button type="submit" class="login-button">Login</button>
-                  </form>
+            <section class="login">
+              <div class="div__login">
+                <h1>LOGIN</h1>
+              </div>
+              <form class="login__form" action="https://dummyjson.com/auth/login" method="POST">
+                  <div class="input__div">
+                    <label for="username">Username:</label> <br>
+                    <input
+                      type="text" name="username" placeholder=" Digite o seu usuário"
+                      id="username" class="input" required >
+                  </div>
+                  <div class="input__div">
+                    <label for="password">Senha:</label> <br>
+                    <input
+                      type="password"  name="password" placeholder=" Digite a sua senha"
+                      id="password" class="input" required >
+                  </div>
+                  <button type="submit" class="button">Login</button>
+                </form>
             </section>
         </main>
         <footer>
+
+          <p>Luana</p>
 
         </footer>
         <script src="./scripts/index.js"></script>
