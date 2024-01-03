@@ -1,3 +1,7 @@
+
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+
 async function usuarioLogin(){
     event.preventDefault();
     try{
@@ -17,10 +21,10 @@ async function usuarioLogin(){
         }
 
         const data = await response.json();
-        const newData = {
-        id: data.id,
-        }
         const token = data.token;
+        const decodedToken = decodeJWT(token);
+        const newData = decodedToken['payload'];
+
         localStorage.setItem('token', token);
         localStorage.setItem('data', JSON.stringify(newData));
         alert('Seja bem vindo, ' + username.value);
@@ -29,12 +33,17 @@ async function usuarioLogin(){
         } catch (error) {
         alert(error.message);
         }
-
-
 }
 
-let username = document.getElementById("username")
-let password = document.getElementById("password")
+function decodeJWT(jwt) {
+    const [header, payload] = jwt.split('.').slice(0,2)
+      .map(el => el.replace(/-/g, '+').replace(/_/g, '/'))
+      .map(el => JSON.parse(window.atob(el)));
+    return {header, payload};
+}
+
+
+  
 
 
 
