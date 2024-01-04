@@ -1,14 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: ffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+
 .cracha {
-    width: 300px;
-    height: 400px;
-    border: 1px solid black;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-top: 10%;
+}
+
+.div__cracha {
+  background-color: rgb(242, 242, 254);
+  border: 3px solid rgb(81, 81, 81);
+  border-radius: 20px;
+}
+
+.div__cracha__info {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 600px;
+  height: auto;
+  padding: 50px 0;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  max-width: 50%;
+  align-items: flex-start;
+  border: 3px solid rgb(81, 81, 81);
+  border-radius: 5px;
+  background-color: rgb(47, 83, 156);
+  margin-left: -4rem;
+  margin-right: 6rem;
+}
+
+.card__title {
+  padding: 20px 0;
+  height: auto;
+  border-bottom: 3px solid rgb(81, 81, 81);
+  width: 100%;
+  text-align: center;
+}
+
+.div__cracha__p {
+  font-weight: bold;
+}
+
+.name {
+  font-size: 30px;
+}

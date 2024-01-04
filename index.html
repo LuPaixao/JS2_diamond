@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Diamond Solution Js2</title>
-        <link rel="icon" type="image/png" href="assets/logo.png">
-        <link rel="stylesheet" href="style/index.css">
-        <style></style>
-    </head>
-    <body>
-        <header>
 
-        </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Solution Js2</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="style/index.css">
+  </head>
 
-        <main>
-            <section class="login">
-              <div class="div__login">
-                <h1>LOGIN</h1>
-              </div>
-              <form class="login__form" onsubmit="usuarioLogin()">
-                  <div class="input__div">
-                    <label for="username">Username:</label> <br>
-                    <input
-                      type="text" name="username" placeholder=" Digite o seu usuário"
-                      id="username" class="input" required >
-                  </div>
-                  <div class="input__div">
-                    <label for="password">Senha:</label> <br>
-                    <input
-                      type="password"  name="password" placeholder=" Digite a sua senha"
-                      id="password" class="input" required >
-                  </div>
-                  <button type="submit" class="button">Login</button>
-                </form>
-            </section>
-        </main>
-        <footer>
+  <body>
+    <section class="login">
+      <div class="div__login">
+        <h1>LOGIN</h1>
+      </div>
+      <form class="login__form" onsubmit="usuarioLogin()">
+        <div class="input__div">
+          <label for="username">Username:</label> <br>
+          <input type="text" name="username" placeholder=" Digite o seu usuário" id="username" class="input" required>
+        </div>
+        <div class="input__div">
+          <label for="password">Senha:</label> <br>
+          <input type="password" name="password" placeholder=" Digite a sua senha" id="password" class="input" required>
+        </div>
+        <button type="submit" class="button">Login</button>
+      </form>
+    </section>
+    <script src="./scripts/index.js"></script>
+  </body>
 
-        </footer>
-        
-  
-        <script src="./scripts/index.js"></script>
-    </body>
 </html>
