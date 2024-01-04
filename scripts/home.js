@@ -22,7 +22,7 @@ function displayUserData(){
     lastElement.innerText = data.lastName;
     idElement.innerText = 'ID: ' + data.id;
     fullNameElement.innerText = `${data.firstName} ${data.lastName}`;
-    genderElement.innerText = 'SEX:'+ data.gender;
+    genderElement.innerText = 'SEX: '+ data.gender;
     hairElement.innerText = data.hair?.type ||'';
     eyesElement.innerText = data.eyesColor  || '';
 
